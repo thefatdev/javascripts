@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(6, 113, 140);
+}
+
+.form-register {
+    width: 400px;
+}
+
+#submitBtn {
+    font-size: 20px;
+    width: 50%;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+}
+
+#update{
+    display: none;
+    font-size: 20px;
+    width: 50%;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+}
+
+input {
+    width: 50%;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.table {
+    border: 1px black solid;
+}
+
+.title {
+    width: 180px;
+    border: 1px solid black;
+}
+
+.notification {
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+    width: auto;
+    min-width: 30%;
+    min-height: 30px;
+    height: auto;
+    background: rgb(15, 140, 51);
+    position: fixed;
+    bottom: 10px;
+    margin-left: 70%;
+    margin-right: auto;
+}
+
+.errorColor {
+    color: red;
+    background: rgb(172, 206, 216);
+    font-weight: bold;
+}

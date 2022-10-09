@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body onload="renderlistStudent()">
+    <div class="form-register">
+        <input type="text" id="fullName"> Full Name <br> <span class="errorColor" id="errorFullName"></span> <br>
+        <input type="text" id="email"> Email <br> <span class="errorColor" id="errorEmail"></span> <br>
+        <input type="text" id="phone"> phone <br> <span class="errorColor" id="errorPhone"></span> <br>
+        <input type="sexual" id="sexual"> Gioi Tinh <br> <span class="errorColor" id="errorSexual"></span> <br>
+        <input type="hidden" id="updateStudent">
+        <button id="submitBtn" onclick="submitButton()">submit</button> <br>
+        <button id="update" onclick="updateUSer()">Update</button> <br>
+        <button id="testValidate" onclick="validateForm()">testValidate</button>
+    </div>
+
+    <table class="table" id="table-info">
+        <tr>
+            <th>STT</th>
+            <th class="title">Full Name</th>
+            <th class="title">Email</th>
+            <th class="title">phone</th>
+            <th class="title">Gioi Tinh</th>
+            <th class="title">Action</th>
+        </tr>
+    </table>
+
+    <div class="notification">
+        <p id="missInformation" onclick="missInformation()"></p>
+        <p id="submitSuccess" onclick="notiAddSuccess()"></p>
+        <p id="updateSuccess"></p>
+        <p id="doesnotexistWarning"></p>
+    </div>
+ 
+        
+
+    
+</body>
+<script src="./js/lodash.js"></script>
+<script src="./js/main.js"></script>
+</html>
